@@ -48,6 +48,7 @@ class FirstCardTranferTest {
         transferMoneyPage.getErrorNoneAmount();
     }
 
+
     // Проверка успешности перевода в рамках наличных средств
     @Test
     void shouldSuccessIfBelowLimit() {

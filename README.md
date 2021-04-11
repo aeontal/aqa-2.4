@@ -1,1 +1,23 @@
-[![Java CI with Gradle](https://github.com/aeontal/aqa-2.4/actions/workflows/gradle.yml/badge.svg)](https://github.com/aeontal/aqa-2.4/actions/workflows/gradle.yml)
+# Page Objects [![Java CI with Gradle](https://github.com/aeontal/aqa-2.4/actions/workflows/gradle.yml/badge.svg)](https://github.com/aeontal/aqa-2.4/actions/workflows/gradle.yml)
+
+### Задача
+
+Ключевой кейс: При успешном переводе, возвращение назад на страницу со списком карт.
+
+Требования к доменным методам, реализованным через Page Objects:
+
+1. Перевода с определённой карты на другую карту n'ой суммы
+2. Проверки баланса по карте (со страницы списка карт).
+
+Тестируемая функциональность: отправка формы.
+
+### Решение
+
+1. Созданы необходимые доменные методы.
+2. Проведено тестирование функциональности перевода между картами одного аккаунта.
+3. Выявлены следующие [ошибки](https://github.com/aeontal/aqa-2.4/issues).
+
+### Баги
+
+1. [Возможность перенесения суммы большей доступной по имеющемуся остатку по карте](https://github.com/aeontal/aqa-2.4/issues/1)
+2. [Возможность пополнения карты при пустом значении поля "Сумма" или значении суммы равным 0](https://github.com/aeontal/aqa-2.4/issues/2)
